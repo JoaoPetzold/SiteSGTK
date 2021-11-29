@@ -47,7 +47,7 @@ export default function Header() {
                 </select>
             </UIModal>
 
-            <img src="/logo-min.png" alt="Skin Gamer Token" />
+            <img src="./logo-min.png" alt="Skin Gamer Token" />
             <p>{i18n.t('titles.app')}</p>
 
             <div className={isActive ? styles.dropdown : styles.dropdownDisable} onClick={changeMenu}>

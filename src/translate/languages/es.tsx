@@ -25,7 +25,7 @@ const messages = {
                 }
             },
             messages: {
-                introduction: 'Token fue creado con el objetivo de facilitar las operaciones financieras en el mundo de los gamers en el mercado de las pieles, sin necesidad de burocracia. Estamos creando una plataforma donde los usuarios tendrán acceso al mercado de varios juegos para apostar o comprar skins de juegos como CS: GO, PUBG, TF4 y etc ... Todo esto será posible con este contrato inteligente y descentralizado.',
+                introduction: 'Token fue creado con el objetivo de facilitar las operaciones financieras en el mundo de los gamers en el mercado de las pieles, sin necesidad de burocracia. Estamos creando una plataforma donde los usuarios tendrán acceso al mercado de varios juegos para apostar o comprar skins de juegos como CS:GO, PUBG, TF4 y etc ... Todo esto será posible con este contrato inteligente y descentralizado.',
                 modal: {
                     closeBtn: 'Cerrar',
                     comingSoon: {
@@ -59,34 +59,34 @@ const messages = {
                 title: 'Roadmap',
                 phase1: {
                     title: 'Primeira Fase',
-                    step1: 'Lançamento na Pancakeswap',
+                    step1: 'Lanzamiento en Pancakeswap',
                     step2: 'Liquidity Locked DxSale',
-                    step3: 'Lançamento do site',
-                    step4: '1.000 membros do Telegram',
+                    step3: 'Lanzamiento del sitio web',
+                    step4: '1.000 miembros del Telegram',
                     step5: 'Plataforma Skin Gamer Token',
-                    step6: 'Divulgação e marketing em massa',
-                    step7: 'Parcerias fechadas com sites de skins',
-                    step8: 'Listagem nas principais plataformas de divulgação'
+                    step6: 'Divulgación y marketing masivo',
+                    step7: 'Asociaciones cerradas con sitios de piel',
+                    step8: 'Listado en las principales plataformas de difusión'
                 },
                 phase2: {
                     title: 'Segunda Fase',
-                    step1: 'Procurar marketing com influenciadores',
-                    step2: 'Competição NFT',
-                    step3: 'Anúncios PooCoin',
+                    step1: 'Marketing de búsqueda con influencers',
+                    step2: 'Competencia NFT',
+                    step3: 'Anuncios PooCoin',
                     step4: '2.500 Holders',
-                    step5: 'Listagem no CoinGecko, Coin Hunt e Coin Sniper',
-                    step6: 'Ícone BSC Scam e Trust Wallet',
-                    step7: 'Auditoria com CertiK'
+                    step5: 'Listados de CoinGecko, Coin Hunt y Coin Sniper',
+                    step6: 'BSC Scam Icon y Trust Wallet',
+                    step7: 'Auditoría con CertiK'
                 },
                 phase3: {
-                    title: 'Terceira Fase',
-                    step1: 'Lançamento da Plataforma principal da S.G.T',
-                    step2: 'Máximo de impulso no nosso marketing',
-                    step3: 'Listagem CMC',
+                    title: 'Tercera Fase',
+                    step1: 'Lanzamiento de la plataforma principal de S.G.T',
+                    step2: 'Máximo impulso en nuestro marketing',
+                    step3: 'Listado CMC',
                     step4: '5.000 Holders',
-                    step5: 'Publicidade física em locais estratégicos',
-                    step6: 'Desenvolvimento de CriptoGames',
-                    step7: 'Lançamento de CriptoGames'
+                    step5: 'Publicidad física en ubicaciones estratégicas',
+                    step6: 'Desarrollo de CriptoGames',
+                    step7: 'Lanzamiento de CriptoGames'
                 }
             }
         }

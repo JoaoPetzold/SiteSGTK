@@ -78,7 +78,9 @@
         color: #555;
         font-weight: 800;
     }
-
+    button:hover {
+        color: #000;    
+    }
     select {
         width: 100%;
         -webkit-appearance: button;
