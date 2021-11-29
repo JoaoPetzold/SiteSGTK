@@ -1,0 +1,112 @@
+.overlay {
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: rgba($color: #fff, $alpha: 0.85);
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 80vw;
+    max-width: 600px;
+    height: 30vh;
+    max-height: 1000px;
+
+    z-index: 999999;
+
+    color: var(--preto);
+
+    -webkit-box-shadow: 0px 0px 10px 0px #151515; 
+    box-shadow: 0px 0px 0.05rem 0px #151515;
+
+    .header {
+        width: 100%;
+        height: 25%;
+        border-bottom: 0.1rem inset var(--preto);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #555;
+            font-weight: 200;
+        }
+    }
+    .message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: inherit;
+        height: 55%;
+        padding: 4rem;
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+    }
+    button {
+        height: 20%;
+        width: 100%;
+        margin-top: auto;
+        border-top: 0.1rem inset var(--preto);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+        color: #555;
+        font-weight: 800;
+    }
+
+    select {
+        width: 100%;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: none;
+
+        -webkit-padding-end: 1rem;
+        -moz-padding-end: 1rem;
+        -webkit-padding-start: 0.25rem;
+        -moz-padding-start: 0.25rem;
+
+        background-color: #fafafa;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-position: center right;
+        background-repeat: no-repeat;
+        
+        border: none;
+        border-radius: 2rem;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+
+        color: #555;
+        font-size: inherit;
+        margin: 0;
+        overflow: hidden;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-indent: 0.5rem;
+    }
+}

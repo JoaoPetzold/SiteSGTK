@@ -1,0 +1,36 @@
+.roadmapContainer {
+    padding-top: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    h1 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thumbRoadmap {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .rm {
+            width: 20rem;
+            margin: 2rem;
+    
+            h2 {
+                font-weight: 500;
+            }
+            li {
+                font-weight: 100;
+                margin-left: 2rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}

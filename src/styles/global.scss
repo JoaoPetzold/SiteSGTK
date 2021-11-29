@@ -1,0 +1,96 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #ffffff;
+    --escuro: #003049;
+    --vermelho: #d62828;
+    --laranja: #f77f00;
+    --amarelo: #fcbf49;
+    --bege: #eae2b7;
+    --preto: #000000;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    height: 100%; overflow: hidden;
+}
+
+@media(max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(45deg, var(--escuro), var(--vermelho));
+    background-size: 200%, 200%;
+    animation: colors 20s ease infinite;
+    scroll-snap-type: y mandatory;
+    height: 100%; overflow: hidden;
+}
+
+body, input, textarea, button {
+    font: 500 1rem Outfit, sans-serif;
+    color: var(--branco);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    font-family: Outfit, sans-serif;
+    color: var(--branco);
+}
+
+h1 {
+    font-size: 2rem !important;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar:hover { 
+    width: 0.75rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--branco);
+    border-radius: 20px; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 0px; 
+}

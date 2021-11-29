@@ -1,0 +1,142 @@
+.headerContainer {
+    background-color: var(--branco);
+    height: 6.5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    z-index: 999999;
+
+    padding: 1rem 3rem;
+
+    margin-bottom: 5rem;
+
+    border-bottom: 0.25rem solid var(--bege);
+
+    p {
+        color: var(--preto);
+        margin-left: 2rem;
+        padding-left: 2rem;
+        margin-bottom: 0;
+        border-left: 1px solid var(--escuro);
+        display: flex;
+        align-items: center;
+    }
+
+    div {
+        margin-left: auto;   
+    }
+
+    a {
+        color: var(--preto);
+        margin-left: 2rem;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: var(--vermelho);
+    }
+
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+        object-fit: cover;
+    }
+
+    .dropdownDisable {
+        display: none;
+    }
+
+    
+}
+
+@media(max-width: 980px) {
+    .headerContainer {
+        padding: 1rem 2rem;
+        
+        p{
+            font-size: 1.3rem;
+            border-left: none;
+            width: 100%;
+            justify-content: center;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            object-fit: cover;
+        }
+    }
+
+    .menu {
+        display: none;    
+    }
+
+    .dropdown {
+        margin-left: auto;
+
+        .icone {
+            color: var(--vermelho);
+            font-size: 1.5rem;
+        }
+        .icone:hover {
+            cursor: pointer;
+        }
+        a {
+            width: 100%;
+            padding-top: 1.3rem;
+            padding-bottom: 1.3rem;
+            margin-left: 0;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: var(--escuro);
+            font-size: 1.5rem;
+        }
+        .dropdownmenu {
+            background-color: var(--branco);
+            margin-top: calc(5rem);
+            padding: 0;
+            
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            width: 100vw;
+            height: calc(100vh - 5rem);
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+        .dropdownitens {
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .dropdownDisable {
+        margin-left: auto;
+        display: inline !important;
+        .icone {
+            color: var(--preto);
+            font-size: 1.5rem;
+        }
+        .icone:hover {
+            cursor: pointer;
+        }
+        div {
+            display: none;
+        }
+    }
+}

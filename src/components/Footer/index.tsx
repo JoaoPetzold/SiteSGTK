@@ -1,0 +1,41 @@
+import styles from './styles.module.scss';
+import { useState, useEffect } from 'react';
+
+import UIModal from '../UI/Modal';
+import { i18n } from '../../translate/i18n'
+import Router from 'next/router';
+
+import { FaInstagram, FaTwitter, FaTelegramPlane, FaGlobeAmericas } from 'react-icons/fa';
+
+const I18N_STORAGE_KEY = 'i18nextLng';
+
+export default function Footer() {
+    const [showModalLang, setShowModalLang] = useState(false);
+    const [language, setLanguage] = useState(null);
+    useEffect(() => {
+        setLanguage(window.localStorage.getItem(I18N_STORAGE_KEY));
+    }, []);
+
+    const handleLang = event => {
+        window.localStorage.setItem(I18N_STORAGE_KEY, event.target.value);
+        Router.reload();
+    };
+
+    return (
+        <footer className={styles.footerContainer}>
+            <UIModal title={i18n.t('messages.modal.langOptions.title')} isVisible={showModalLang} onClickClose={() => setShowModalLang(false)} >
+                <select onChange={handleLang} value={language}>
+                    <option value="en-US">{i18n.t('messages.modal.langOptions.english')}</option>
+                    <option value="pt-BR">{i18n.t('messages.modal.langOptions.portuguese')}</option>
+                    <option value="es-MX">{i18n.t('messages.modal.langOptions.spanish')}</option>
+                </select>
+            </UIModal>
+            <div>
+                <FaGlobeAmericas onClick={() => setShowModalLang(true)} className={styles.redesSociais}/>
+                <FaInstagram className={styles.redesSociais}/>
+                <FaTwitter className={styles.redesSociais}/>
+                <FaTelegramPlane className={styles.redesSociais}/>
+            </div>
+        </footer>
+    )
+}
