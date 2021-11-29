@@ -5,7 +5,7 @@ import UIModal from '../UI/Modal';
 import { i18n } from '../../translate/i18n'
 import Router from 'next/router';
 
-import { FaInstagram, FaTwitter, FaTelegramPlane, FaGlobeAmericas } from 'react-icons/fa';
+import { FaTwitter, FaTelegramPlane, FaGlobeAmericas } from 'react-icons/fa';
 
 const I18N_STORAGE_KEY = 'i18nextLng';
 
@@ -32,9 +32,12 @@ export default function Footer() {
             </UIModal>
             <div>
                 <FaGlobeAmericas onClick={() => setShowModalLang(true)} className={styles.redesSociais}/>
-                <FaInstagram className={styles.redesSociais}/>
-                <FaTwitter className={styles.redesSociais}/>
-                <FaTelegramPlane className={styles.redesSociais}/>
+                <a href="" target="_blank">
+                    <FaTwitter className={styles.redesSociais}/>
+                </a>
+                <a href="https://t.me/skintoken/" target="blank">
+                    <FaTelegramPlane className={styles.redesSociais} href='' />
+                </a>
             </div>
         </footer>
     )
