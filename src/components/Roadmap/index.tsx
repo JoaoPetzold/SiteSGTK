@@ -1,46 +1,47 @@
 import styles from './styles.module.scss';
+import { i18n } from '../../translate/i18n'
 
 export default function Roadmap() {
     return (
         <div className={styles.roadmapContainer}>
-            <h1>Roadmap</h1>
+            <h1>{i18n.t('roadmap.title')}</h1>
 
             <div className={styles.thumbRoadmap}>
                 <div className={styles.rm}>
-                    <h2>Primeira Fase</h2>
+                    <h2>{i18n.t('roadmap.phase1.title')}</h2>
                     <ul>
-                        <li>Lançamento na Pancakeswap</li>
-                        <li>Liquidity Locked DxSale</li>
-                        <li>Lançamento do site</li>
-                        <li>1000 membros do Telegram</li>
-                        <li>Plataforma Skin Gamer Token</li>
-                        <li>Divulgação e marketing em massa</li>
-                        <li>Parcerias fechadas com sites de skins</li>
-                        <li>Listagem nas principais plataformas de divulgação</li>
+                        <li>{i18n.t('roadmap.phase1.step1')}</li>
+                        <li>{i18n.t('roadmap.phase1.step2')}</li>
+                        <li>{i18n.t('roadmap.phase1.step3')}</li>
+                        <li>{i18n.t('roadmap.phase1.step4')}</li>
+                        <li>{i18n.t('roadmap.phase1.step5')}</li>
+                        <li>{i18n.t('roadmap.phase1.step6')}</li>
+                        <li>{i18n.t('roadmap.phase1.step7')}</li>
+                        <li>{i18n.t('roadmap.phase1.step8')}</li>
                     </ul>
                 </div>
                 <div className={styles.rm}>
-                    <h2>Segunda Fase</h2>
+                    <h2>{i18n.t('roadmap.phase2.title')}</h2>
                     <ul>
-                        <li>Procurar marketing com influenciadores</li>
-                        <li>Competição NFT</li>
-                        <li>Anúncios PooCoin</li>
-                        <li>2.500 Holders</li>
-                        <li>Listagem no CoinGecko, Coin Hunt e Coin Sniper</li>
-                        <li>Ícone BSC Scam e Trust Wallet </li>
-                        <li>Auditoria com CertiK</li> 
+                        <li>{i18n.t('roadmap.phase2.step1')}</li>
+                        <li>{i18n.t('roadmap.phase2.step2')}</li>
+                        <li>{i18n.t('roadmap.phase2.step3')}</li>
+                        <li>{i18n.t('roadmap.phase2.step4')}</li>
+                        <li>{i18n.t('roadmap.phase2.step5')}</li>
+                        <li>{i18n.t('roadmap.phase2.step6')}</li>
+                        <li>{i18n.t('roadmap.phase2.step7')}</li> 
                     </ul>
                 </div>
                 <div className={styles.rm}>
-                    <h2>Terceira Fase</h2>
+                    <h2>{i18n.t('roadmap.phase3.title')}</h2>
                     <ul>
-                        <li>Lançamento da Plataforma principal da S.G.T</li>
-                        <li>Máximo de impulso no nosso marketing</li>
-                        <li>Listagem CMC</li>
-                        <li>5.000 Holders</li>
-                        <li>Publicidade física em locais estratégicos</li>
-                        <li>Desenvolvimento de CriptoGames</li>
-                        <li>Lançamento de CriptoGames</li>
+                        <li>{i18n.t('roadmap.phase3.step1')}</li>
+                        <li>{i18n.t('roadmap.phase3.step2')}</li>
+                        <li>{i18n.t('roadmap.phase3.step3')}</li>
+                        <li>{i18n.t('roadmap.phase3.step4')}</li>
+                        <li>{i18n.t('roadmap.phase3.step5')}</li>
+                        <li>{i18n.t('roadmap.phase3.step6')}</li>
+                        <li>{i18n.t('roadmap.phase3.step7')}</li>
                     </ul>
                 </div>
             </div>

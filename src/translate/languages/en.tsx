@@ -4,7 +4,7 @@ const messages = {
             titles: {
                 app: 'Skin Gamer Token',
                 welcome: 'Welcome to Skin Gamer Token',
-                preSale: 'Pre-Sale em',
+                preSale: 'Pre-Sale in',
                 launch: 'Launch in',
                 menuDesktop: {
                     home: 'Home',
@@ -25,7 +25,7 @@ const messages = {
                 }
             },
             messages: {
-                introduction: 'Token was created with the aim of facilitating financial operations in the world of gamers in the skin market, without the need for bureaucracy. We are creating a platform where users will have access to the market of various games to bet or buy game skins like CS: GO, PUBG, TF4 and etc... All this will be possible with this intelligent and decentralized contract.',
+                introduction: 'Token was created with the aim of facilitating financial operations in the world of gamers in the skin market, without the need for bureaucracy. We are creating a platform where users will have access to the market of various games to bet or buy game skins like CS:GO, PUBG, TF4 and etc... All this will be possible with this intelligent and decentralized contract.',
                 modal: {
                     closeBtn: 'Close',
                     comingSoon: {
@@ -58,35 +58,35 @@ const messages = {
             roadmap: {
                 title: 'Roadmap',
                 phase1: {
-                    title: 'Primeira Fase',
-                    step1: 'Lançamento na Pancakeswap',
+                    title: 'First Phase',
+                    step1: 'Launch on Pancakeswap',
                     step2: 'Liquidity Locked DxSale',
-                    step3: 'Lançamento do site',
-                    step4: '1.000 membros do Telegram',
-                    step5: 'Plataforma Skin Gamer Token',
-                    step6: 'Divulgação e marketing em massa',
-                    step7: 'Parcerias fechadas com sites de skins',
-                    step8: 'Listagem nas principais plataformas de divulgação'
+                    step3: 'Website Launch',
+                    step4: '1.000 members on Telegram',
+                    step5: 'Platform Skin Gamer Token',
+                    step6: 'Outreach and mass marketing',
+                    step7: 'Closed partnerships with skin sites',
+                    step8: 'Listing on the main dissemination platforms'
                 },
                 phase2: {
-                    title: 'Segunda Fase',
-                    step1: 'Procurar marketing com influenciadores',
-                    step2: 'Competição NFT',
-                    step3: 'Anúncios PooCoin',
+                    title: 'Second Phase',
+                    step1: 'Search marketing with influencers',
+                    step2: 'NFT Competition',
+                    step3: 'PooCoin Ads',
                     step4: '2.500 Holders',
-                    step5: 'Listagem no CoinGecko, Coin Hunt e Coin Sniper',
-                    step6: 'Ícone BSC Scam e Trust Wallet',
-                    step7: 'Auditoria com CertiK'
+                    step5: 'CoinGecko, Coin Hunt and Coin Sniper listings',
+                    step6: 'BSC Scam Icon and Trust Wallet',
+                    step7: 'Audit with CertiK'
                 },
                 phase3: {
-                    title: 'Terceira Fase',
-                    step1: 'Lançamento da Plataforma principal da S.G.T',
-                    step2: 'Máximo de impulso no nosso marketing',
-                    step3: 'Listagem CMC',
+                    title: 'Third Phase',
+                    step1: 'Launch of S.G.Ts Main Platform',
+                    step2: 'Maximum boost in our marketing',
+                    step3: 'CMC Listing',
                     step4: '5.000 Holders',
-                    step5: 'Publicidade física em locais estratégicos',
-                    step6: 'Desenvolvimento de CriptoGames',
-                    step7: 'Lançamento de CriptoGames'
+                    step5: 'Physical advertising in strategic locations',
+                    step6: 'CriptoGames Development',
+                    step7: 'CriptoGames Launch'
                 }
             }
         }

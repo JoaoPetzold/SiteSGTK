@@ -14,8 +14,12 @@ export default function Welcome() {
             <div id="inicio" className={styles.inicio}>
                 <h1>{i18n.t('titles.welcome')}</h1>
                 <h2>
+                    <span>{i18n.t('titles.preSale')}&nbsp;</span>
+                    <Countdown date={Date.parse('2021-12-03')} />
+                </h2>
+                <h2>
                     <span>{i18n.t('titles.launch')}&nbsp;</span>
-                    <Countdown date={Date.parse('2021-12-01')} />
+                    <Countdown date={Date.parse('2021-12-10')} />
                 </h2>
                 <h3>{i18n.t('messages.introduction')}</h3>
                 <div>
