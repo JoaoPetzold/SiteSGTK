@@ -5,6 +5,7 @@ import { i18n } from '../../../translate/i18n';
 import styles from './styles.module.scss';
 
 type ModalInfo = {
+    id?: string;
     title: string;
     children?: React.ReactNode;
     isVisible: Boolean
@@ -16,8 +17,6 @@ const UIModal = (modalInfo : ModalInfo) => {
     useEffect(() => {
         setMounted(true);
     }, []);
-
-
 
     const modalContent = modalInfo.isVisible ? (
         <div className={styles.overlay}>

@@ -23,7 +23,7 @@ export default function Footer() {
 
     return (
         <footer className={styles.footerContainer}>
-            <UIModal title={i18n.t('messages.modal.langOptions.title')} isVisible={showModalLang} onClickClose={() => setShowModalLang(false)} >
+            <UIModal id='lang' title={i18n.t('messages.modal.langOptions.title')} isVisible={showModalLang} onClickClose={() => setShowModalLang(false)} >
                 <select onChange={handleLang} value={language}>
                     <option value="en-US">{i18n.t('messages.modal.langOptions.english')}</option>
                     <option value="pt-BR">{i18n.t('messages.modal.langOptions.portuguese')}</option>
@@ -32,11 +32,11 @@ export default function Footer() {
             </UIModal>
             <div>
                 <FaGlobeAmericas onClick={() => setShowModalLang(true)} className={styles.redesSociais}/>
-                <a href="" target="_blank">
+                <a href="" target= "_blank" rel="noreferrer noopener">
                     <FaTwitter className={styles.redesSociais}/>
                 </a>
-                <a href="https://t.me/skintoken/" target="blank">
-                    <FaTelegramPlane className={styles.redesSociais} href='' />
+                <a href="https://t.me/skintoken/" target= "_blank" rel="noreferrer noopener">
+                    <FaTelegramPlane className={styles.redesSociais}/>
                 </a>
             </div>
         </footer>

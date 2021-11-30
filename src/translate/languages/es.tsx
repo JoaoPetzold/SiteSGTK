@@ -4,8 +4,19 @@ const messages = {
             titles: {
                 app: 'Skin Gamer Token',
                 welcome: 'Bienvenido al Skin Gamer Token',
-                preSale: 'Preventa en',
-                launch: 'Lanzamiento en',
+                days: 'dias',
+                hours: 'horas',
+                minutes: 'minutos',
+                and: 'y',
+                preSale: {
+                    title: 'Preventa en',
+                    completed: 'Preventa ya disponible'
+                },
+                launch: {
+                    title: '',
+                    subtitle: 'para el lanzamiento oficial',
+                    completed: 'Disponible para compra'
+                },
                 menuDesktop: {
                     home: 'Comienzo',
                     buy: 'Compra',
@@ -37,6 +48,10 @@ const messages = {
                         english: 'English',
                         portuguese: 'Português',
                         spanish: 'Español'
+                    },
+                    launchPcs: {
+                        title: 'Pronto',
+                        text: 'La compra de tokens por Pancakeswap solo estará disponible el día del lanzamiento (2021/12/10), ingrese a nuestro telegrama para mantenerse actualizado.'
                     }
                 }
             }, 
@@ -48,7 +63,7 @@ const messages = {
             },
             tokencomics: {
                 title: 'Tokencomics',
-                subtitle: 'Supply 1.000.000',
+                subtitle: 'Supply 100.000.000.000.000',
                 preSale: '30% Preventa',
                 marketing: '10% Marketing',
                 devTeam: '5% Equipo de Desarrollo',
