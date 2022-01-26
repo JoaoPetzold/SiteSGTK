@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99999999999999;
 }
 
 .modal {
@@ -24,6 +25,7 @@
     max-width: 600px;
     height: 30vh;
     max-height: 1000px;
+    min-height: 250px;
 
     z-index: 999999;
 

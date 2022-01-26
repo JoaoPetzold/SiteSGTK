@@ -9,6 +9,7 @@ const I18N_STORAGE_KEY = 'i18nextLng';
 
 export default function Header() {
     const [showModal, setShowModal] = useState(false);
+    const [showModalBuy, setShowModalBuy] = useState(false);
     const [showModalLang, setShowModalLang] = useState(false);
     const [mounted, setMounted] = useState(false);
     const [language, setLanguage] = useState(null);
@@ -35,16 +36,20 @@ export default function Header() {
 
     return (
         <header className={styles.headerContainer}>
-            <UIModal title={i18n.t('messages.modal.comingSoon.title')} isVisible={showModal} onClickClose={() => setShowModal(false)} >
+            <UIModal id='comingSoon' title={i18n.t('messages.modal.comingSoon.title')} isVisible={showModal} onClickClose={() => setShowModal(false)} >
                 {i18n.t('messages.modal.comingSoon.text')}
             </UIModal>
             
-            <UIModal title={i18n.t('messages.modal.langOptions.title')} isVisible={showModalLang} onClickClose={() => setShowModalLang(false)} >
+            <UIModal id='lang' title={i18n.t('messages.modal.langOptions.title')} isVisible={showModalLang} onClickClose={() => setShowModalLang(false)} >
                 <select onChange={handleLang} value={language}>
                     <option value="en-US">{i18n.t('messages.modal.langOptions.english')}</option>
                     <option value="pt-BR">{i18n.t('messages.modal.langOptions.portuguese')}</option>
                     <option value="es-MX">{i18n.t('messages.modal.langOptions.spanish')}</option>
                 </select>
+            </UIModal>
+
+            <UIModal id='buy' title={i18n.t('messages.modal.launchPcs.title')} isVisible={showModalBuy} onClickClose={() => setShowModalBuy(false)}>
+                {i18n.t('messages.modal.launchPcs.text')}
             </UIModal>
 
             <img src="./logo-min.png" alt="Skin Gamer Token" />
@@ -55,7 +60,7 @@ export default function Header() {
                 <div className={styles.dropdownmenu}>
                     <div className={styles.dropdownitens}>
                         <a onClick={scrollTopY} href="#welcome">{i18n.t('titles.menuMobile.home')}</a>
-                        <a onClick={changeMenu} href="#">{i18n.t('titles.menuMobile.buy')}</a>
+                        <a onClick={() => setShowModalBuy(!showModalBuy)}>{i18n.t('titles.menuMobile.buy')}</a>
                         <a onClick={changeMenu} href="#tokencomics">{i18n.t('titles.menuMobile.tokencomics')}</a>
                         <a onClick={changeMenu} href="#roadmap">{i18n.t('titles.menuMobile.roadmap')}</a>
                         <a onClick={() => setShowModal(true)}>{i18n.t('titles.menuMobile.nft')}</a>
@@ -68,7 +73,7 @@ export default function Header() {
 
             <div className={styles.menu}>            
                 <a href="#inicio">{i18n.t('titles.menuDesktop.home')}</a>
-                <a href="#">{i18n.t('titles.menuDesktop.buy')}</a>
+                <a onClick={() => setShowModalBuy(!showModalBuy)}>{i18n.t('titles.menuDesktop.buy')}</a>
                 <a href="#tokencomics">{i18n.t('titles.menuDesktop.tokencomics')}</a>
                 <a href="#roadmap">{i18n.t('titles.menuDesktop.roadmap')}</a>
                 <a onClick={() => setShowModal(true)}>{i18n.t('titles.menuDesktop.nft')}</a>

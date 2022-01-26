@@ -4,10 +4,15 @@ import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main>
-      <Header />
-      <Component {...pageProps} />
-    </main>
+    <>
+      <head>
+        <title>Skin Gamer Token</title>
+      </head>
+      <main>
+        <Header />
+        <Component {...pageProps} />
+      </main>
+    </>
   )
 }
 
