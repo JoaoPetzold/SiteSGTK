@@ -32,9 +32,6 @@ export default function Footer() {
             </UIModal>
             <div>
                 <FaGlobeAmericas onClick={() => setShowModalLang(true)} className={styles.redesSociais}/>
-                <a href="" target= "_blank" rel="noreferrer noopener">
-                    <FaTwitter className={styles.redesSociais}/>
-                </a>
                 <a href="https://t.me/skintoken/" target= "_blank" rel="noreferrer noopener">
                     <FaTelegramPlane className={styles.redesSociais}/>
                 </a>

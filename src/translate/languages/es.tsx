@@ -51,7 +51,7 @@ const messages = {
                     },
                     launchPcs: {
                         title: 'Pronto',
-                        text: 'La compra de tokens por Pancakeswap solo estará disponible el día del lanzamiento (2021/12/10), ingrese a nuestro telegrama para mantenerse actualizado.'
+                        text: 'La compra de tokens por Pancakeswap solo estará disponible el día del lanzamiento (2021/12/28), ingrese a nuestro telegrama para mantenerse actualizado.'
                     }
                 }
             }, 

@@ -13,7 +13,7 @@ import Footer from '../Footer';
 export default function Welcome() {
     const [showModal, setShowModal] = useState(false);
 
-    const PrevendaOK = () => <span>{i18n.t('titles.preSale.title')}</span>;
+    const PrevendaOK = () => <span>{i18n.t('titles.preSale.completed')}</span>;
     const renderPrevenda = ({ days, hours, minutes, completed }) => {
         if (completed) {
             return <PrevendaOK />
@@ -40,10 +40,10 @@ export default function Welcome() {
             <div id="inicio" className={styles.inicio}>
                 <h1>{i18n.t('titles.welcome')}</h1>
                 <h2>
-                    <Countdown date={Date.parse('2021-12-03')} renderer={renderPrevenda} />
+                    <Countdown date={Date.parse('2021-12-24')} renderer={renderPrevenda} />
                 </h2>
                 <h2>
-                    <Countdown date={Date.parse('2021-12-10')} renderer={renderVenda} />
+                    <Countdown date={Date.parse('2021-12-28')} renderer={renderVenda} />
                 </h2>
                 <h3>{i18n.t('messages.introduction')}</h3>
                 <div>
@@ -52,7 +52,7 @@ export default function Welcome() {
                     <a href="https://bscscan.com/token/0xb17fb5b0e3dbc143e15361d1dad46d5b738d954e" target= "_blank" rel="noreferrer noopener">
                         <button><FaFileContract />&nbsp;{i18n.t('buttons.contractBcs')}</button>
                     </a>
-                    <a href="whitepaper" target= "_blank" rel="noreferrer noopener">
+                    <a href="whitepaper.pdf" target= "_blank" rel="noreferrer noopener">
                         <button><FaScroll />&nbsp;{i18n.t('buttons.whitepaper')}</button>
                     </a>
                     <a href="https://poocoin.app/tokens/0xb17fb5b0e3dbc143e15361d1dad46d5b738d954e" target= "_blank" rel="noreferrer noopener">

@@ -51,7 +51,7 @@ const messages = {
                     },
                     launchPcs: {
                         title: 'Coming Soon',
-                        text: 'Token purchase by Pancakeswap will only be available on release day (2021/12/10), enter our telegram to stay updated.'
+                        text: 'Token purchase by Pancakeswap will only be available on release day (2021/12/28), enter our telegram to stay updated.'
                     }
                 }
             }, 

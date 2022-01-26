@@ -51,7 +51,7 @@ const messages = {
                     },
                     launchPcs: {
                         title: 'Em Breve',
-                        text: 'A compra do Token pela Pancakeswap só estará disponivel no dia de lançamento (2021/12/10), entre em nosso telegram para ficar atualizado.'
+                        text: 'A compra do Token pela Pancakeswap só estará disponivel no dia de lançamento (2021/12/28), entre em nosso telegram para ficar atualizado.'
                     }
                 }
             }, 
