@@ -1,5 +1,5 @@
 module.exports = {
   reactStrictMode: true,
   distDir: './build/',
-  assetPrefix: './'
+  assetPrefix: '/SiteSGTK/'
 }
